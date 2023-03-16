@@ -5,7 +5,10 @@
 ## Mongo Dump
 
 * Iniciamos el mongo (mongod)
-* En la shell nos dirigimos a la ubación donde se generará la carpeta "dump". Ahí se almacenará el respaldo de las base de datos que tenemos.
+* En la shell nos dirigimos a la ubicación donde se generará la carpeta "dump". Ahí se almacenará el respaldo de las bases de datos que tenemos.
+* Para realizar el respaldo de todas las bases de datos que tenemos se ingresa:
+
+  `mongodump`
 
 ![mongodump](assets/20230316_114026_mongodump.gif)
 
@@ -40,8 +43,6 @@ mongodump --db "la db donde se encuentra nuestra colección" --"la colección qu
 ![mongodumpCollection](assets/20230316_115952_dumpcollection.gif)
 
 ---
-
-
 
 ## Mongo Restore
 
@@ -86,5 +87,4 @@ mongorestore --db "nombre de la base de datos donde se encuentra la colección" 
 `mongorestore --db Musica --collection generos dump/Musica/generos.bson`
 
 ![mongoRestoreCollection](assets/20230316_135020_mongorestorecollection.gif)
-
 
