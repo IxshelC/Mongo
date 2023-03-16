@@ -39,6 +39,10 @@ mongodump --db "la db donde se encuentra nuestra colección" --"la colección qu
 
 ![mongodumpCollection](assets/20230316_115952_dumpcollection.gif)
 
+---
+
+
+
 ## Mongo Restore
 
 * Para restaurar todas las bases de datos que tenemos en Dump, ingresamos lo siguiente:
