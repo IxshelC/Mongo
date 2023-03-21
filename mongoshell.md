@@ -128,3 +128,28 @@ mongoimport --db "nombre de la base de datos" --collection "nombre de la collect
 
 ![MongoImportCollection](assets/20230317_113000_MongoImportCollection.gif)
 
+---
+
+## Mongo Export
+
+* Iniciar la instancia de mongo en la shell de nuestro sistema operativo
+
+  `mongod`
+* Iniciamos el mongo
+
+  `mongosh`
+* Veremos nuestras bases de datos con el comando  `show dbs`
+* En este ejemplo ocuparemos la db "Proveedores" y la colección "Generos"
+* En la Shell de nuestro SO introduciremos lo siguiente:
+
+```
+mongoexport --db "Nombre de la db" --collection "Nombre de la colección" --out "ubicación donde se exportará la colección"\"Nombre de la colección"."formato de archivo (csv,json,bson)"
+```
+
+*Ejemplo:*
+`mongoexport --db Proveedores --collection Generos --out C:\Users\Ixshel\OneDrive\Escritorio\MongoExport\Generos.json`
+
+![MongoExport](assets/20230321_104427_MongoExport.gif)
+
+
+
