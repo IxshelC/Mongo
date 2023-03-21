@@ -88,3 +88,43 @@ mongorestore --db "nombre de la base de datos donde se encuentra la colección" 
 
 ![mongoRestoreCollection](assets/20230316_135020_mongorestorecollection.gif)
 
+---
+
+## Mongo Import
+
+### Importar una base de datos y colección
+
+* Iniciar la instancia de mongo en la shell de nuestro sistema operativo
+
+  `mongod`
+* Para importar la base de datos ingresamos lo siguiente:
+
+```
+mongoimport --db "nombre de la base de datos" --collection "nombre de la colección" --file "ubicación del archivo".json
+```
+
+*Ejemplo:*
+`mongoimport --db zip --collection zipcollection --file C:\Users\Ixshel\Downloads\zips.json`
+
+* Iniciamos el mongo
+
+  `mongosh`
+* Verificamos si se importó la db
+
+`show dbs`  // Mostrará todas las bases de datos
+
+![MongoImport](assets/20230317_104058_MongoImport.gif)
+
+### Importar una colección a una base de datos
+
+* Importaremos la coleción "zip" en la base de datos "Musica"
+
+```
+mongoimport --db "nombre de la base de datos" --collection "nombre de la collection que importaremos" --file "ubicación de la colección"
+```
+
+*Ejemplo:*
+`mongoimport --db Musica --collection zip --file C:\Users\Ixshel\Downloads.json`
+
+![MongoImportCollection](assets/20230317_113000_MongoImportCollection.gif)
+
